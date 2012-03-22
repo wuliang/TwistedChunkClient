@@ -1,0 +1,31 @@
+* Introduce
+"TwistedChunkClient" is extention of Twisted Http Client. 
+
+'chunked-transfer' is used more and more in web server for transmitting responses with dynamically-generated content. (http://en.wikipedia.org/wiki/Chunked_transfer_encoding) Twisted is a popular event-driven networking engine. The twisted server component “HttpChannel” support chunked-transfer, but client component "HttpClient" doesn't. It is implemented in "TwistedChunkClient".
+
+
+* Requirements
+** Twisted (http://twistedmatrix.com/)
+
+* Usage
+** use myHTTPClient
+copy the implementation class myHTTPClient from "webclient.py"
+it has same interface as "HTTPClient"
+
+** webclient.py
+This file is used to in extend Scrapy (by relacing the origion file).
+
+
+* Develope
+** test ?
+Just test in my project [https://github.com/wuliang/TiebaImageGrabber]
+
+** discuss
+
+http://groups.google.com/group/scrapy-developers/browse_thread/thread/4acd970d345d49be
+
+** release
+- Thu Mar 22 18:19:56 CST 2012
+by wuliang [www.wuliang.cn at gmail.com]
+
+
